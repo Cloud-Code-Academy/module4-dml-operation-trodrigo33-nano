@@ -177,7 +177,7 @@ public with sharing class DMLOperations {
      */
     public static void upsertOpportunities(String accountName, List<String> oppNames) {
      Account acc = new Account(Name = accountName); 
-     upsert acc;
+     insert acc;
 
     List<Opportunity> opportunities = new List<Opportunity>();
         for (String oppName : oppNames)
